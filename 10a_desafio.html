@@ -1,9 +1,71 @@
-<!-- Desafio 2 digitação (Aqui) -->
- 
-<!-- Obs: Ler (10a_desafio.md) para orientações -->
-<!-- Imagem de como deve ficar pronto na pasta assets (desafio 2.jpg) -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNews Today</title>
+  <style>
+    body{font-family:Arial, sans-serif;margin:0;padding:20px;line-height:1.6;background:#f7f7f7;color:#222;}
+    h1,h2,h3{text-align:center;}
+    #clock{text-align:center;font-size:1.2em;margin:20px 0;color:#800080;}
+    form{max-width:400px;margin:20px auto;display:flex;flex-direction:column;gap:12px;padding:20px;background:#fff;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+    input,select{padding:10px;border:1px solid #ccc;border-radius:6px;}
+    label{font-size:0.9em;}
+    button{padding:12px;background:#800080;color:#fff;border:none;border-radius:6px;cursor:pointer;}
+    button:hover{background:#5a005a;}
+    footer{text-align:center;margin-top:40px;font-size:0.85em;color:#555;}
+  </style>
+</head>
+<body>
+  <h1>TechNews Today📱</h1>
 
-<!-- 📱 🚀 📺 📧 emojis para usar no projeto -->
+  <br> <h3>As <strong>ultimas novidades</strong> do mundo <em>tech!</em></h3>
+    <p style="text-align:center;">As novas tecnologias de hoje moldam o amanhã com inovação e ousadia.</p>
+
+  <h1>🚀 IA Revoluciona Desenvolvimento</h1>
 
 
+  <div id="clock" alt="Horario de Brasilia" > </div>
 
+  <footer>
+    <h2>📺Tech em Video</h2>>
+
+    <video width="500" poster="assets/limoes-capa.png" controls>
+    <source src="assets/meu-video.mp4" type="video/mp4">
+    Seu navegador não suporta videos.
+   </video>
+  </footer>
+
+  <h2>Newsletter</h2>
+  <form>
+    <input type="email" name="email" placeholder="Digite seu e-mail" required>
+    <select name="area" required>
+      <option value="">Área de interesse</option>
+      <option value="ia">Inteligência Artificial</option>
+      <option value="hardware">Hardware</option>
+      <option value="software">Software</option>
+      <option value="mobile">Mobile</option>
+    </select>
+    <label><input type="checkbox" required> Aceito os termos e condições</label>
+    <button type="submit">Inscrever-se</button>
+  </form>
+
+  <script>
+    function atualizarRelogio(){
+      const agora = new Date();
+      const opcoes = {timeZone: "America/Sao_Paulo", 
+                      year: "numeric", month: "2-digit", day: "2-digit", 
+                      hour: "2-digit", minute: "2-digit", second: "2-digit"};
+      document.getElementById("clock").textContent = 
+        agora.toLocaleString("pt-BR", opcoes);
+    }
+    setInterval(atualizarRelogio, 1000);
+    atualizarRelogio();
+  </script>
+    <p>&copy; 2025 meu site. Alguns direitos reervados.</p>
+            <address>
+                Contato: <a href="Malito.cotatomeussite.com"> info@technews.com</a>
+            </address>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luna Captures</title>
+  <style>
+    body{font-family:Arial, sans-serif; margin:0; line-height:1.6;}
+    header, nav, section, footer{padding:20px;}
+    nav a{margin:0 10px; text-decoration:none; color:#444;}
+    nav a:hover{color:#800080;}
+    h2{text-align:center; margin-top:40px;}
+    .galeria img{width:30%; margin:1%; border-radius:8px;}
+    form{max-width:500px; margin:auto; display:flex; flex-direction:column; gap:10px;}
+    input, select, textarea{padding:10px; border:1px solid #ccc; border-radius:6px;}
+    button{padding:10px; background:#800080; color:#fff; border:none; border-radius:6px; cursor:pointer;}
+    button:hover{background:#5a005a;}
+    table{width:100%; border-collapse:collapse; margin-top:20px;}
+    table, th, td{border:1px solid #ccc; padding:10px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Luna Captures</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre</h2>
+    <p>A Luna Captures eterniza momentos únicos com sensibilidade e estilo, transformando memórias em arte.</p>
+
+    <p>Especilistas em fotografia a <stron>8 anos</stron> se solidificando no mercado.</p>
+
+    <p>    <blockquote> "A fotografia captura mais do que imagens, captura nossos sentimentos."</blockquote></p>
+  </section>
+
+  <section id="galeria" class="galeria">
+    <h2>Galeria</h2>
+    <img src="Imagens_desafio/download.jpg" width="200" height="300" alt="Foto exemplo 1">
+    <img src="Imagens_desafio/download (2).jpg" width="200" height="300" alt="Foto exemplo 2">
+    <img src="Imagens_desafio/download (1).jpg" width="200" height="300" alt="Foto exemplo 3">
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <ul>
+      <li><strong>Casamentos e eventos</strong>- R$1200</li>
+      <li><strong>Ensaios fotográficos</strong>- R$999</li>
+      <li><strong>Produções comerciais</strong>- R$890</li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <form>
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu email" required>
+      <select name="evento" required>
+        <option value="">Selecione o tipo de evento</option>
+        <option value="casamento">Casamento</option>
+        <option value="Ensaio">Ensaios fotográficos</option>
+        <option value="produçoes">Produções comerciais</option>
+        
+      </select>
+      <textarea name="detalhes" rows="5" placeholder="Escreva os detalhes do evento"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Luna Captures • Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
